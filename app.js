@@ -30,7 +30,6 @@ app.get("/",function(req,res){
     var a=req.body.duty;
     items.push(a);
     res.redirect("/");
-    console.log("adf");
    })
             
 });
