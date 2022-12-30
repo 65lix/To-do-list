@@ -21,22 +21,42 @@ font-family: 'helvetica neue';
 
 .box{
     min-height: 70px;
+    padding: 10px;
     align-items: center;
+    border: 5px solid gray;
+    margin-bottom: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.item{
+    text-align: center;
+    font-style: oblique;
 }
 
 .item:last-child{
     border-bottom: 0;
 }
 
-input:checked+p{
+.item1{
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 6px;
+}
+
+input:checked+label{
     text-decoration: line-through;
-    text-decoration-color: #a683e3;
 }
 
 input[type="checkbox"]{
     margin: 0;
 }
-#button{
-    
+
+#check{
+    position: relative;
+    width: 40px;
+    height: 20px;
+}
+
+#label{
+    position: absolute;
+    text-align: justify;
 }
