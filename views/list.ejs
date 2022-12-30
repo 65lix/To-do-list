@@ -1,0 +1,32 @@
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>TO DO LIST</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+       <h1 id="date"><%= kindofday %></h1>
+
+
+       
+      
+      
+       <div class="box">
+        <% for(var  i=0;i<newitem.length;i++){ %>
+            <div class="item">
+                <input type="checkbox">
+                <p><%=newitem[i]%></p>
+            </div>
+            
+            <% } %>
+
+            <form class="item" action="/" method="post">
+                <input type="text" name="duty" placeholder="New item" autocomplete="off">
+                <button id="button" type="submit" name="button">ADD</button>
+               </form>
+       </div>
+       
+
+    </body>
+    </body>
+</html>
